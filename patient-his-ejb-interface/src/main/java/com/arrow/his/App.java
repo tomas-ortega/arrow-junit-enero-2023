@@ -8,6 +8,6 @@ public class App
 {
     public static void main( String[] args )
     {
-        PatientDTO patient;
+        System.out.println( "Hello World!" );
     }
 }
