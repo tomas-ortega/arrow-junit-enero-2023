@@ -45,9 +45,14 @@
     </dependency>
 
      <!--Internal project dependencies-->
-      <dependency>
+      <!-- <dependency>
         <groupId>com.arrow.his</groupId>
         <artifactId>patient-his-ejb</artifactId>
+      </dependency> -->
+
+      <dependency>
+        <groupId>com.arrow.his</groupId>
+        <artifactId>patient-his-ejb-interface</artifactId>
       </dependency>
   </dependencies>
 

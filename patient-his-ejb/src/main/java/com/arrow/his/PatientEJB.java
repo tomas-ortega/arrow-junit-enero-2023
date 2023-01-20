@@ -1,10 +1,21 @@
 package com.arrow.his;
 
-import javax.ejb.Stateless;
+import javax.inject.Inject;
+import javax.inject.Singleton;
 
-@Stateless
-public class PatientEJB {
+import com.arrow.his.interfaces.IPatientDAO;
 
+@Singleton
+public class PatientEJB implements IPatientEjbInterface {
+	private IPatientDAO patientDAO;
+	
+	@Inject
+	public void setPatientDAO(IPatientDAO patientDAO) {
+		this.patientDAO = patientDAO;
+	}
+	
+
+    @Override
     public PatientDTO searchPatient(PatientDTO nhc) throws Exception {
          PatientDTO patientFound = null;
          
